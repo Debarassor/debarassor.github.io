@@ -6,6 +6,9 @@ import react from "@vitejs/plugin-react-swc";
 
 export default defineConfig({
   base: "", // <-- important
+  build: {
+    outDir: "build", // Utilise "build" comme dossier de sortie si ce n'est pas déjà le cas
+  },
    plugins: [react(), tailwindcss(), reactRouter(), tsconfigPaths()],
 });
 
