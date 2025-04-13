@@ -10,6 +10,8 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 
+
+
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
@@ -24,6 +26,18 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
+ 
+
+
+  if (typeof window !== "undefined" && window.location.search) {
+    const path = window.location.pathname + window.location.search.replace("?", "");
+    window.history.replaceState(null, "", path);
+  }
+
+
+ // Convertit l'URL query (?route) en pathname (/route)
+
+ 
   return (
     <html lang="en">
       <head>
