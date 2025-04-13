@@ -29,10 +29,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
  
 
   // Redirection GitHub Pages (exécute une seule fois)
-  if (typeof window !== "undefined" && window.location.search) {
-    const path = window.location.pathname + window.location.search.replace("/?", "");
-    window.history.replaceState(null, "", path);
-  }
+window.console.log("staring js");
 
  
   return (
