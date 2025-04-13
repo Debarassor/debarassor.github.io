@@ -7,6 +7,8 @@ import {
   ScrollRestoration,
 } from "react-router";
 
+import useEffect from "react";
+
 import type { Route } from "./+types/root";
 import "./app.css";
 
@@ -27,11 +29,18 @@ export const links: Route.LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
  
-
   // Redirection GitHub Pages (exécute une seule fois)
-window.console.log("staring js");
+    if (typeof window !== "undefined") {
+      console.log(window.location.href);
+      window.console.log("staring js");
+      const path = window.location.pathname + window.location.search.replace("\/?", "");
+      window.history.replaceState(null, "", path);
+    }
+    else
+    console.log('oops');
 
- 
+
+
   return (
     <html lang="en">
       <head>
