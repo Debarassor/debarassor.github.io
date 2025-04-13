@@ -28,14 +28,11 @@ export const links: Route.LinksFunction = () => [
 export function Layout({ children }: { children: React.ReactNode }) {
  
 
-
+  // Redirection GitHub Pages (exécute une seule fois)
   if (typeof window !== "undefined" && window.location.search) {
-    const path = window.location.pathname + window.location.search.replace("?", "");
+    const path = window.location.pathname + window.location.search.replace("/?", "");
     window.history.replaceState(null, "", path);
   }
-
-
- // Convertit l'URL query (?route) en pathname (/route)
 
  
   return (
