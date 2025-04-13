@@ -53,13 +53,18 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
         <ScrollRestoration />
         <Scripts />
+        <p>TEST Layout</p>
+
       </body>
     </html>
   );
 }
 
 export default function App() {
-  return <Outlet />;
+  return <>
+  <p>TEST empty</p>
+  <Outlet />;
+  </>
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
