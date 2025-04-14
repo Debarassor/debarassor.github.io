@@ -1,54 +1,72 @@
 import './App.scss';
-import HeaderBar from './Elements/HeaderBar.js';
-import ParralaxBackground from './ParralaxBackground.js';
+import {HeaderBar, FooterBar} from './Elements/HeaderBar.js';
+import ParralaxBackground from './Elements/ParralaxBackground.js';
+import BeforeAfterSlider from './Elements/BeforeAfterSlider.js';
 
 
 function AppRouter() {
 
-  return (
+	return (
 
-    <div className="App">
-
-
-
-
-      <div className='App-area'>
+		<div className="App">
 
 
 
-        <ParralaxBackground />
-        <div className="background">
-          <img src="/images/chaucoBg.jpg" alt="backgroundImg" />
-        </div>
+
+			<div className='App-area'>
+
+			
+
+				<ParralaxBackground />
+				<div className="background">
+					<img src="/images/chaucoBg.jpg" alt="backgroundImg" />
+				</div>
+
+				<HeaderBar />
 
 
-        <HeaderBar />
+				<div className='App-body'>
+
+					<h1>Braquet déménagement</h1>
+					<em>Service gratuit à domicile</em>
+
+				<BeforeAfterSlider />
+
+					<div className='Article'>
+						<div className='Article-HorizontalBox'>
+
+							<img src="/images/chauco1.jpg" alt="chauconin" className='Article-ImgGrow1' />
+							<div className='Article-TextBox'>
+								<h2>
+									Service proposé
+								</h2>
+								<p>
+									Nous vidons gratuitement maisons,
+									greniers et appartements, en donnant
+									une seconde vie aux objets récupérés.
+									Gérant nous même un musée, nous sommes capable 
+									d'itentifier des objets ayant une valeur historique
+									afin des les valoriser et de les placer dans des collections.
+									Le reste est soigneusement trié : une partie est
+									confiée aux ressourceries ou recyclée, une autre
+									proposée à la vente. Un service utile, écologique
+									et respectueux du patrimoine.
+								</p>
+							</div>
+
+						</div>
 
 
-        <div className='App-body'>
+					</div>			
 
+				</div>
 
-        <h1>Le garde meuble</h1>
+				<FooterBar />
 
-          <div className='Article'>
+			</div>
 
-
-            <h2>
-              Ce que l'ont fait
-            </h2>
-            <p>
-            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-            </p>
-
-          
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-  );
+		</div>
+	);
 }
 
 export default AppRouter;

@@ -39,8 +39,8 @@ header.HeaderNav {
 	nav ul li a {
 		text-decoration: none;
 		color: rgb(0, 0, 0);
-		font-size: var(--textFont-size );
-		transition: color 0.3s ease;//, background-color 0.3s ease;
+		font-size: var(--textFont-size);
+		transition: color 0.3s ease; //, background-color 0.3s ease;
 	}
 
 	nav ul a:hover {
@@ -48,4 +48,39 @@ header.HeaderNav {
 		//background-color: rgb(50, 50, 45);
 
 	}
+}
+
+
+footer.FooterBar {
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	width: 100%;
+	background: var(--color-brownDark);
+
+	margin-top: 3vh;
+
+
+
+
+
+	position: relative;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+
+	nav {
+		height: 100%;
+		display: block;
+		padding: 2vh;
+	}
+
+
+
 }

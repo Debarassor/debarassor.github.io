@@ -6,6 +6,27 @@
   font-family: instruction;
   src: url("../public/fonts/Instruction.otf");
 }
+@font-face {
+  font-family: pocket;
+  src: url("../public/fonts/Pocket-Change.ttf.woff");
+ 
+}
+
+
+h1 {
+  font-family: "helveticaTitle", pocket;
+  font-weight: 50;
+  transform:scale(1,1.2); /* W3C */
+}
+
+h2,
+h3{
+  font-family: "helveticaTitle", pocket;
+  font-weight: 50;
+  transform:scale(1,1.2); /* W3C */
+}
+
+
 
 body {
   
@@ -16,8 +37,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+/*
 code {
   font-family:  source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+}*/

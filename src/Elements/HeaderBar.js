@@ -20,13 +20,29 @@ function HeaderBar() {
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
-               
+
             </div>
         </header>
     )
 
 }
 
+function FooterBar() {
 
-export default HeaderBar;
+    return (
+
+
+        <footer className='FooterBar'>
+            <nav>
+                <ul>
+                    <p>2025</p>
+                </ul>
+            </nav>
+        </footer>
+    );
+
+}
+
+export { HeaderBar, FooterBar };
+
 

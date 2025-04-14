@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import "../App.scss";
+
+
+.BeforeAfterSlider {
+
+
+
+	* {
+	  box-sizing:border-box
+	}
+
+
+img {
+  width:100%;
+  display:block;
+}
+
+.container {
+	
+ @extend .DesignBorderImage;
+
+  width:50%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10vh;
+
+}
+
+
+#before-after-slider {
+  width:100%;
+  position:relative;
+  overflow:hidden;
+}
+
+#after-image {
+  display:block;
+}
+
+#before-image {
+  position:absolute;
+  height:100%;
+  width:50%;
+  top:0;
+  left:0;
+  overflow:hidden;
+  z-index:2;
+}
+
+#resizer {
+  position:absolute;
+  display:flex;
+  align-items:center;
+  z-index:5;
+  top:0;
+  left:50%;
+  height:100%;
+ // width:0.3vh;
+ border-left: 0.5vh rgb(255, 255, 255) solid;
+
+  /*Stop vertical scrolling on touch*/
+  -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
+
+#resizer:after {
+
+
+ // background-color:var(--color-brownDark);
+ background:linear-gradient(62deg,#ff6fad 5%,#7dabff);
+ font-family: "Font Awesome 5 Free";
+ content:'\f337';
+
+
+
+  //font-family: 'Courier New', Courier, monospace;
+  //content:'⋮';
+  font-weight:900;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:absolute;
+  margin: 0 0 0 -2vh;
+  width:4vh;
+  height:20%;
+
+  color: white;
+  border-radius:3vh;
+  border: 0.5vh rgb(255, 255, 255) solid;
+  transform: translateX(-0.5vh);
+}
+
+@media (max-aspect-ratio:5/4) {
+  .container {
+    width:100%;
+    padding:0 20px
+  }
+}
+
+
+}
