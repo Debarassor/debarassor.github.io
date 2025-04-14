@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.10fcb14e.css",
-    "main.js": "/static/js/main.f13cd104.js",
+    "main.css": "/static/css/main.e882e65a.css",
+    "main.js": "/static/js/main.08843708.js",
     "static/js/453.0b4b0abe.chunk.js": "/static/js/453.0b4b0abe.chunk.js",
+    "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.7a8b4f130182d19a2d7c.svg",
+    "static/media/fa-solid-900.eot": "/static/media/fa-solid-900.9bbb245e67a133f6e486.eot",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.be9ee23c0c6390141475.ttf",
+    "static/media/Pocket-Change.woff": "/static/media/Pocket-Change.986b2987e2b8d8e91aad.woff",
+    "static/media/fa-solid-900.woff": "/static/media/fa-solid-900.eeccf4f66002c6f2ba24.woff",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.1551f4f60c37af51121f.woff2",
     "static/media/Instruction.otf": "/static/media/Instruction.70fe399ce5297e7dd3a9.otf",
     "static/media/helv.otf": "/static/media/helv.2e818d8bc0f2225206d8.otf",
     "index.html": "/index.html",
-    "main.10fcb14e.css.map": "/static/css/main.10fcb14e.css.map",
-    "main.f13cd104.js.map": "/static/js/main.f13cd104.js.map",
+    "main.e882e65a.css.map": "/static/css/main.e882e65a.css.map",
+    "main.08843708.js.map": "/static/js/main.08843708.js.map",
     "453.0b4b0abe.chunk.js.map": "/static/js/453.0b4b0abe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10fcb14e.css",
-    "static/js/main.f13cd104.js"
+    "static/css/main.e882e65a.css",
+    "static/js/main.08843708.js"
   ]
 }
