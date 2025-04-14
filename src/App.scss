@@ -10,6 +10,7 @@
   --textFont-size: 1em;
 
 
+  background-color: rgb(35, 35, 35);
   font-size: calc(8px + 2vmin);
 
 }
@@ -67,10 +68,13 @@ img + em
   background-color: var(--color-brownLight);
   margin-left: 12%;
   margin-right: 12%;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+
 
   @media (max-aspect-ratio: 5/4) {
-    margin-left: 0%;
-    margin-right: 0%;
+    margin: 0%;
+    
   }
 
 }
@@ -92,7 +96,9 @@ img + em
   text-align: left;
   display: block;
   width: 100%;
+  
 
+  margin-bottom: 10vh;
 
 
 

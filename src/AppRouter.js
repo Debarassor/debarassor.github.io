@@ -55,9 +55,34 @@ function AppRouter() {
 							</div>
 
 						</div>
-
-
 					</div>			
+
+					<div className='Article'>
+						<div className='Article-HorizontalBox'>
+
+							<div className='Article-TextBox'>
+								<h2>
+									Trop cool
+								</h2>
+								<p>
+									Nous vidons gratuitement maisons,
+									greniers et appartements, en donnant
+									une seconde vie aux objets récupérés.
+									Gérant nous même un musée, nous sommes capable 
+									d'itentifier des objets ayant une valeur historique
+									afin des les valoriser et de les placer dans des collections.
+									Le reste est soigneusement trié : une partie est
+									confiée aux ressourceries ou recyclée, une autre
+									proposée à la vente. Un service utile, écologique
+									et respectueux du patrimoine.
+								</p>
+							</div>
+							<img src="/images/chauco1.jpg" alt="chauconin" className='Article-ImgGrow1' />
+
+
+						</div>
+					</div>			
+
 
 				</div>
 
